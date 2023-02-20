@@ -13,7 +13,7 @@
           <tr>
             <td>
               <a href="{{ item.url | within: collections.all }}">
-                <img src="{{ item | img_url: 'medium' }}" alt="{{ item.title | escape }}">
+                {{ item.title | img_url: 'medium' | img_tag }}
               </a>
             </td>
             <td>
